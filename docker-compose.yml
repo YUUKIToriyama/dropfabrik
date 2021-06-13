@@ -1,12 +1,12 @@
-version: '3.8'
+version: "3.8"
 
 services:
   db:
-    image: mariadb:10.2
+    image: mariadb:10.4
     #image: mysql:5.7
 
   php:
-    image: blauerberg/drupal-php:7.1-fpm
+    image: blauerberg/drupal-php:7.3-fpm
     #image: blauerberg/drupal-php:7.0-fpm
     #image: blauerberg/drupal-php:5.6-fpm
     #image: blauerberg/drupal-php:7.1-apache
@@ -19,4 +19,3 @@ services:
     image: nginx:latest
     links:
       - php
-
